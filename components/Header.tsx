@@ -6,7 +6,10 @@ import ThemeContext from '../context/ThemeContext'
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
   const fixedHeaderClass =
-    'header mx-auto max-w-full px-4 py-6 bg-primary-500 dark:bg-secondary-500 text-secondary-500 dark:text-primary-500 duration-100 block sm:flex justify-between items-center'
+    'header relative mx-auto max-w-full sm:px-4 py-6 bg-primary-500 dark:bg-secondary-500 text-secondary-500 dark:text-primary-500 block sm:flex justify-between items-center'
+  const fixedMenuClasses =
+    'block sm:flex absolute sm:relative w-full bg-primary-500 dark:bg-secondary-500 sm:w-auto'
+  const fixedLiClasses = 'sm:px-4 sm:py-6 px-2 py-4'
   const { isDark } = useContext(ThemeContext)
   return (
     <header className={isDark ? fixedHeaderClass + ' dark' : fixedHeaderClass}>
@@ -39,17 +42,17 @@ const Header: React.FC = () => {
 
       <ul
         className={`menu  ${
-          showMenu ? 'block sm:flex' : 'block sm:flex hidden'
+          showMenu ? fixedMenuClasses : fixedMenuClasses + ' hidden'
         }`}
       >
         {upperMenu.map((menuItem, index) => {
           return (
-            <li key={index} className={'px-4 py-6'}>
+            <li key={index} className={fixedLiClasses}>
               <a href={menuItem.link}>{menuItem.name}</a>
             </li>
           )
         })}
-        <li className={'px-4 py-6'}>
+        <li className={fixedLiClasses}>
           <ToggleSwitch />
         </li>
       </ul>
