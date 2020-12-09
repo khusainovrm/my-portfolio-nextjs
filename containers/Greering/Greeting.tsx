@@ -6,7 +6,7 @@ import cn from 'classnames'
 
 export default function Greeting() {
   return (
-    <div className={'mt-16 w-11/12 py-6 px-3 my-0 mx-auto'} id="greeting">
+    <div className={'subContainer'} id="greeting">
       <div className={'sm:flex'}>
         <div
           className={
@@ -26,7 +26,7 @@ export default function Greeting() {
           </div>
         </div>
         <div className={'sm:flex-1 flex-1 mb-8 w-full sm:w-1/2'}>
-          {<ImageManOnTable />}
+          <ImageManOnTable />
         </div>
       </div>
     </div>

@@ -11,6 +11,10 @@
   @apply bg-main-500 border-main-500 border text-white uppercase font-bold w-max py-3 px-5 rounded cursor-pointer text-center mt-5 mx-auto sm:mx-0 hover:bg-primary-500 duration-300 hover:text-main-500 transform hover:-translate-y-0.5;
 }
 
+.subContainer {
+  @apply mt-16 w-11/12 py-6 px-3 my-0 mx-auto;
+}
+
 /*background-color: #ffffff;*/
 /*color: #55198b;*/
 /*transition: all .3s ease 0s;*/

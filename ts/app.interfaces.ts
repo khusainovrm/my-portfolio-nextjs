@@ -18,3 +18,10 @@ export interface IButton {
   href: string
   newTab?: string
 }
+
+export interface ISkillsSection {
+  title: string
+  subTitle: string
+  skills: string[]
+  softwareSkills: object[]
+}
