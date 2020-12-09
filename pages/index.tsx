@@ -2,8 +2,6 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from '../context/ThemeContext'
 import Header from '../components/Header'
-import Main from '../containers/Main'
-import Toggle from '../components/Toggle'
 import Greeting from '../containers/Greering/Greeting'
 const DARK_CLASS = 'dark'
 
@@ -29,8 +27,6 @@ const Home: React.FC = () => {
 
       <main className={'bg-primary-500 dark:bg-secondary-500 min-h-screen'}>
         <Header />
-        <Main />
-        <Toggle />
         <Greeting />
       </main>
     </ThemeProvider>

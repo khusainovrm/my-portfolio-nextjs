@@ -20,10 +20,9 @@ export default function Greeting() {
             <p className={'text-lg sm:text-xl text-gray-400 sm:leading-10'}>
               {greeting.subTitle}
             </p>
-            SocialMedia
-            <div className={''}>
-              <Button text="Contact me" href="#contact" />
-            </div>
+          </div>
+          <div className={'btn-main'}>
+            <Button text="Contact me" href="#contact" />
           </div>
         </div>
         <div className={'sm:flex-1 flex-1 mb-8 w-full sm:w-1/2'}>
