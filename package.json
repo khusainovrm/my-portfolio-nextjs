@@ -8,15 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-awesome-reveal": "^3.5.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.4",
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "postcss": "^8.1.14",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",

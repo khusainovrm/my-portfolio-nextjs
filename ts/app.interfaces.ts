@@ -11,3 +11,10 @@ export interface IMenu {
   name: string
   link: string
 }
+
+export interface IButton {
+  text: string
+  className?: string
+  href: string
+  newTab?: string
+}

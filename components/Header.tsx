@@ -6,7 +6,7 @@ import ThemeContext from '../context/ThemeContext'
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
   const fixedHeaderClass =
-    'header relative mx-auto max-w-full sm:px-4 py-6 bg-primary-500 dark:bg-secondary-500 text-secondary-500 dark:text-primary-500 block sm:flex justify-between items-center'
+    'header relative mx-auto max-w-full sm:px-4 py-6 text-secondary-500 dark:text-primary-500 block sm:flex justify-between items-center'
   const fixedMenuClasses =
     'block sm:flex absolute sm:relative w-full bg-primary-500 dark:bg-secondary-500 sm:w-auto'
   const fixedLiClasses = 'sm:px-4 sm:py-6 px-2 py-4'

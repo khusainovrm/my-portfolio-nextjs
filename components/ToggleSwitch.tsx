@@ -3,7 +3,7 @@ import ThemeContext from '../context/ThemeContext'
 
 const ToggleSwitch: React.FC = () => {
   const [isChecked, setChecked] = useState(false)
-  const themeContext = useContext(ThemeContext)
+  const { toggleTheme } = useContext(ThemeContext)
 
   return (
     <label className="switch">
@@ -11,7 +11,7 @@ const ToggleSwitch: React.FC = () => {
         type="checkbox"
         checked={isChecked}
         onChange={() => {
-          themeContext.toggleTheme()
+          toggleTheme()
           setChecked(!isChecked)
         }}
       />
