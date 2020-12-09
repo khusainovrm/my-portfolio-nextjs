@@ -14,9 +14,10 @@ const Header: React.FC = () => {
   return (
     <header className={isDark ? fixedHeaderClass + ' dark' : fixedHeaderClass}>
       <div className={'Logo flex items-center justify-between'}>
+        <div className={'sm:hidden'} />
         <div className={'Logo__logo'}>
           {' '}
-          <span className="grey-color text-2xl">&lt; </span>
+          <span className="grey-color sm:text-2xl">&lt; </span>
           <span
             className={
               'font-augustina text-3xl text-main-500 dark:text-primary-500'
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
           >
             {userName.name}
           </span>
-          <span className="grey-color text-2xl"> /&gt;</span>
+          <span className="grey-color sm:text-2xl"> /&gt;</span>
         </div>
         <div className="Logo__button block sm:hidden">
           {' '}
