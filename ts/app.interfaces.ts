@@ -25,3 +25,11 @@ export interface ISkillsSection {
   skills: string[]
   softwareSkills: object[]
 }
+
+export interface ITechStack {
+  viewSkillBars: boolean
+  experience: {
+    Stack: string
+    progressPercentage: string
+  }[]
+}

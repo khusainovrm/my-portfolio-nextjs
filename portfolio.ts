@@ -1,4 +1,4 @@
-import { IMenu, ISkillsSection, IUser } from './ts/app.interfaces'
+import { IMenu, ISkillsSection, ITechStack, IUser } from './ts/app.interfaces'
 
 export const userName: IUser = {
   name: 'Rinat Khusainov',
@@ -58,6 +58,24 @@ export const skillsSection: ISkillsSection = {
     {
       skillName: 'firebase',
       fontAwesomeClassname: 'fas fa-fire',
+    },
+  ],
+}
+
+export const techStack: ITechStack = {
+  viewSkillBars: true,
+  experience: [
+    {
+      Stack: 'Frontend/Design',
+      progressPercentage: '90%',
+    },
+    {
+      Stack: 'Backend',
+      progressPercentage: '70%',
+    },
+    {
+      Stack: 'Programming',
+      progressPercentage: '60%',
     },
   ],
 }

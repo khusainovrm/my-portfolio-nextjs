@@ -15,10 +15,14 @@
   @apply mt-16 w-11/12 py-6 px-3 my-0 mx-auto;
 }
 
-/*background-color: #ffffff;*/
-/*color: #55198b;*/
-/*transition: all .3s ease 0s;*/
-/*transform: translateY(-3px);*/
+.meter {
+  @apply relative bg-secondary-100 border rounded-2xl;
+  height: 20px;
+}
+
+.heading {
+  @apply my-8 text-4xl;
+}
 
 /* Start purging... */
 @tailwind utilities;

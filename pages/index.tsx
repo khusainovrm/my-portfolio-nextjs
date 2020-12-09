@@ -4,6 +4,8 @@ import { ThemeProvider } from '../context/ThemeContext'
 import Header from '../components/Header'
 import Greeting from '../containers/Greering/Greeting'
 import Skills from '../containers/Skills/Skills'
+import StackProgress from '../containers/StackProgress/StackProgress'
+
 const DARK_CLASS = 'dark'
 
 const Home: React.FC = () => {
@@ -33,6 +35,7 @@ const Home: React.FC = () => {
         <Header />
         <Greeting />
         <Skills />
+        <StackProgress />
       </main>
     </ThemeProvider>
   )
