@@ -33,3 +33,15 @@ export interface ITechStack {
     progressPercentage: string
   }[]
 }
+
+export interface ICardInfo {
+  role: string
+  company: string
+  date: string
+  desc: string
+  descBullets: string[]
+}
+
+export interface IWorkExperiences {
+  experience: ICardInfo[]
+}

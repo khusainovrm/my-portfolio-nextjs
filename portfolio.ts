@@ -1,4 +1,10 @@
-import { IMenu, ISkillsSection, ITechStack, IUser } from './ts/app.interfaces'
+import {
+  IMenu,
+  ISkillsSection,
+  ITechStack,
+  IUser,
+  IWorkExperiences,
+} from './ts/app.interfaces'
 
 export const userName: IUser = {
   name: 'Rinat Khusainov',
@@ -76,6 +82,21 @@ export const techStack: ITechStack = {
     {
       Stack: 'Programming',
       progressPercentage: '60%',
+    },
+  ],
+}
+
+export const workExperiences: IWorkExperiences = {
+  experience: [
+    {
+      role: 'Front-End Developer',
+      company: 'Ucase',
+      date: 'June 2020 – November 2020',
+      desc:
+        'Ucase.live is that solution your business is looking for. Whether you need to hold an online broadcast or organize a corporate event in current conditions of social distancing, Ucase.live is able to arrange that for you.',
+      descBullets: [
+        'Problem solving, not just to code, but sit down with visual and user experience designers to solve major challenges!',
+      ],
     },
   ],
 }

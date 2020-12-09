@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Greeting from '../containers/Greering/Greeting'
 import Skills from '../containers/Skills/Skills'
 import StackProgress from '../containers/StackProgress/StackProgress'
+import WorkExperience from '../containers/WorkExperience/WorkExperience'
 
 const DARK_CLASS = 'dark'
 
@@ -36,6 +37,7 @@ const Home: React.FC = () => {
         <Greeting />
         <Skills />
         <StackProgress />
+        <WorkExperience />
       </main>
     </ThemeProvider>
   )

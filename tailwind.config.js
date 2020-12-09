@@ -1,3 +1,5 @@
+const { boxShadow } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [
     './components/**/*.{js,ts,jsx,tsx}',
@@ -7,6 +9,10 @@ module.exports = {
   darkMode: 'class', // 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        ...boxShadow,
+        special: '#00000033 0px 10px 30px -15px',
+      },
       fontFamily: {
         translate: {
           '1/7': '14.2857143%',
