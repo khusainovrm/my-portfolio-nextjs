@@ -63,7 +63,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow: ['hover'],
+    },
   },
   plugins: [],
 }

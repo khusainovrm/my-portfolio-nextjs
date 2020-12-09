@@ -7,7 +7,7 @@ export default function WorkExperience() {
     <div id="experience" className={'subContainer'}>
       <div className="experience-container" id="workExperience">
         <div>
-          <h1 className="heading">Experiences</h1>
+          <div className="heading dark:text-primary-500">Experiences</div>
           <div className="experience-cards-div">
             {workExperiences.experience.map((card, idx) => {
               return (

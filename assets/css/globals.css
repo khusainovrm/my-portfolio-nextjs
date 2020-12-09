@@ -24,6 +24,10 @@
   @apply my-8 text-4xl;
 }
 
+.text-shadow-special:hover {
+  text-shadow: 2px 1px 2px #b5b5b5;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

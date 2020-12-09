@@ -14,9 +14,9 @@ export default function Greeting() {
           }
         >
           <div>
-            <h1 className={cn(' text-3xl sm:text-5xl')}>
+            <div className={cn(' text-3xl sm:text-5xl')}>
               {greeting.title} <span className={''} />
-            </h1>
+            </div>
             <p className={'text-lg sm:text-xl text-gray-400 sm:leading-10'}>
               {greeting.subTitle}
             </p>

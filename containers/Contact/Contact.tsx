@@ -10,18 +10,19 @@ export default function Contact() {
         className={'flex flex-col sm:flex-row sm:flex text-center sm:text-left'}
       >
         <div className={'sm:flex-1 flex-1 mb-8 w-full sm:w-1/2 order-2'}>
-          <h1 className="heading ">{contactInfo.title}</h1>
+          <div className="heading dark:text-primary-500">
+            {contactInfo.title}
+          </div>
           <p className={'text-gray-400 uppercase'}>{contactInfo.subtitle}</p>
 
-          <div className={'text-gray-400'}>
-            <a className="contact-detail" href={'tel:' + contactInfo.number}>
-              <div>{contactInfo.number}</div>
+          <div className={'text-gray-400 text-xl'}>
+            <a href={'tel:' + contactInfo.number}>
+              <div className={'text-shadow-special'}>{contactInfo.number}</div>
             </a>
-            <a
-              className="contact-detail-email"
-              href={'mailto:' + contactInfo.email_address}
-            >
-              <div>{contactInfo.email_address}</div>
+            <a href={'mailto:' + contactInfo.email_address}>
+              <div className={'text-shadow-special'}>
+                {contactInfo.email_address}
+              </div>
             </a>
           </div>
         </div>

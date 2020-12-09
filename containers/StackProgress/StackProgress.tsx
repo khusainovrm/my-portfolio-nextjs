@@ -12,7 +12,7 @@ export default function StackProgress() {
           }
         >
           <div className="skills-bar">
-            <h1 className={'heading'}>Proficiency</h1>
+            <div className={'heading'}>Proficiency</div>
             {techStack.experience.map((exp, idx) => {
               const progressStyle = {
                 width: exp.progressPercentage,

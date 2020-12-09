@@ -7,13 +7,17 @@ export default function ExperienceCard({ cardInfo }: { cardInfo: ICardInfo }) {
       <div className={'w-full bg-primary-600 py-10 px-6 rounded-t-2xl'}>
         <div className="experience-blurred_div" />
         <div className="experience-div-company">
-          <h5 className="text-center text-2xl">{cardInfo.company}</h5>
+          <div className="text-center text-2xl">{cardInfo.company}</div>
         </div>
       </div>
-      <div className="text-center py-6 px-6">
-        <h5 className={'text-2xl'}>{cardInfo.role}</h5>
-        <h5 className={'text-xl mb-2'}>{cardInfo.date}</h5>
-        <p className={'text-gray-400 mb-2'}>{cardInfo.desc}</p>
+      <div className="text-center py-6 px-6 border rounded-b-2xl">
+        <div className={'text-2xl dark:text-primary-500'}>{cardInfo.role}</div>
+        <div className={'text-xl mb-2 dark:text-primary-500'}>
+          {cardInfo.date}
+        </div>
+        <p className={'text-gray-400 mb-2 text-shadow-special'}>
+          {cardInfo.desc}
+        </p>
         <ul>
           <li className={'text-gray-400'}>{cardInfo.descBullets[0]}</li>
         </ul>
