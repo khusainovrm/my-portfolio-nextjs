@@ -1,7 +1,6 @@
 import React from 'react'
-import { contactInfo, skillsSection } from '../../portfolio'
+import { contactInfo } from '../../portfolio'
 import ProgrammerImage from '../../components/ProgrammerImage'
-import DeveloperActivity from '../../components/developerActivity'
 
 export default function Contact() {
   return (

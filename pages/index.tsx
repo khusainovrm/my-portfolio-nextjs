@@ -8,6 +8,7 @@ import StackProgress from '../containers/StackProgress/StackProgress'
 import WorkExperience from '../containers/WorkExperience/WorkExperience'
 import Contact from '../containers/Contact/Contact'
 import Footer from '../containers/Footer/Footer'
+import Top from '../components/Top'
 
 const DARK_CLASS = 'dark'
 
@@ -42,6 +43,7 @@ const Home: React.FC = () => {
         <WorkExperience />
         <Contact />
         <Footer />
+        <Top />
       </main>
     </ThemeProvider>
   )
