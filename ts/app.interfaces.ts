@@ -45,3 +45,7 @@ export interface ICardInfo {
 export interface IWorkExperiences {
   experience: ICardInfo[]
 }
+
+export interface IContactInfo {
+  [key: string]: string
+}

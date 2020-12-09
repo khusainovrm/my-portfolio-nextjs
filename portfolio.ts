@@ -1,4 +1,5 @@
 import {
+  IContactInfo,
   IMenu,
   ISkillsSection,
   ITechStack,
@@ -99,4 +100,12 @@ export const workExperiences: IWorkExperiences = {
       ],
     },
   ],
+}
+
+export const contactInfo: IContactInfo = {
+  title: 'Contact Me ☎️',
+  subtitle:
+    'Discuss a project or just want to say hi? My Inbox is open for all.',
+  number: '+7-(916)-916-2506',
+  email_address: 'khusainovrm@yandex.ru',
 }
