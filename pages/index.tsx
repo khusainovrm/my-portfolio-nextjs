@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from '../context/ThemeContext'
-import Header from '../components/Header'
+import Header from '../containers/Header/Header'
 import Greeting from '../containers/Greering/Greeting'
 import Skills from '../containers/Skills/Skills'
 import StackProgress from '../containers/StackProgress/StackProgress'

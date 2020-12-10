@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
-import { upperMenu, userName } from '../portfolio'
-import ToggleSwitch from '../components/ToggleSwitch'
-import ThemeContext from '../context/ThemeContext'
+import { upperMenu, userName } from '../../portfolio'
+import ToggleSwitch from '../../components/ToggleSwitch'
+import ThemeContext from '../../context/ThemeContext'
 
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -11,6 +11,7 @@ const Header: React.FC = () => {
     'block sm:flex absolute sm:relative w-full bg-primary-500 dark:bg-secondary-500 sm:w-auto'
   const fixedLiClasses = 'sm:px-4 sm:py-6 px-2 py-4'
   const { isDark } = useContext(ThemeContext)
+
   return (
     <header className={isDark ? fixedHeaderClass + ' dark' : fixedHeaderClass}>
       <div className={'Logo flex items-center justify-between'}>

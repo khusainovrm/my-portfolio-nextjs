@@ -27,7 +27,7 @@ export const greeting = {
 
 export const skillsSection: ISkillsSection = {
   title: 'What i do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  subTitle: 'CRAZY FRONT-END DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
   skills: [
     '⚡ Develop highly interactive Front end / User Interfaces for your web',
     '⚡ Integration of third party services such as Firebase',
