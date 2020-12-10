@@ -19,8 +19,8 @@ input {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
 }
 
 .slider::before {
@@ -31,8 +31,8 @@ input {
   left: 0;
   bottom: 0;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
 }
 
 input:checked + .slider {

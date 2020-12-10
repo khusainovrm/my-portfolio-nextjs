@@ -19,9 +19,7 @@ export default function ExperienceCard({ cardInfo }: { cardInfo: ICardInfo }) {
         <div className={'text-xl mb-2 dark:text-primary-500'}>
           {cardInfo.date}
         </div>
-        <p className={'text-gray-400 mb-2 text-shadow-special'}>
-          {cardInfo.desc}
-        </p>
+        <p className={'text-gray-400 mb-2'}>{cardInfo.desc}</p>
         <ul>
           <li className={'text-gray-400'}>{cardInfo.descBullets[0]}</li>
         </ul>
