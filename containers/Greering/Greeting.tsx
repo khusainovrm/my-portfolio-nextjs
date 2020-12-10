@@ -2,7 +2,6 @@ import React from 'react'
 import Button from '../../components/Button'
 import { greeting } from '../../portfolio'
 import ImageManOnTable from '../../components/ImageManOnTable'
-import cn from 'classnames'
 
 export default function Greeting() {
   return (
@@ -14,7 +13,7 @@ export default function Greeting() {
           }
         >
           <div>
-            <div className={cn(' text-3xl sm:text-5xl')}>
+            <div className={'heading font-black'}>
               {greeting.title} <span className={''} />
             </div>
             <p className={'text-lg sm:text-xl text-gray-400 sm:leading-10'}>

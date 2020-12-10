@@ -12,7 +12,7 @@
 }
 
 .subContainer {
-  @apply mt-16 w-11/12 py-6 px-3 my-0 mx-auto;
+  @apply sm:mt-16 mt-8 w-11/12 py-3 px-1 sm:py-6 sm:px-3 my-0 mx-auto;
 }
 
 .meter {
@@ -21,7 +21,7 @@
 }
 
 .heading {
-  @apply my-8 text-4xl;
+  @apply my-4 sm:my-8 text-3xl sm:text-4xl;
 }
 
 .text-shadow-special:hover {

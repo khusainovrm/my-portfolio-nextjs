@@ -24,7 +24,7 @@ const Skills: React.FC = () => (
           <div className={'text-lg text-gray-400 text-left'}>
             {skillsSection.skills.map((skills, idx) => {
               return (
-                <p key={idx} className={'dark'}>
+                <p key={idx} className={'text-center sm:text-left'}>
                   {skills}
                 </p>
               )
