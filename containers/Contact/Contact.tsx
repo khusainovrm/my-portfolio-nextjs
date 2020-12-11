@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { contactInfo } from '../../portfolio'
 import ProgrammerImage from '../../components/ProgrammerImage'
 import { Fade } from 'react-awesome-reveal'

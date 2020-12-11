@@ -1,17 +1,15 @@
 import React, { useContext, useState } from 'react'
-import { upperMenu, userName } from '../../portfolio'
-import ToggleSwitch from '../../components/ToggleSwitch'
+import { userName } from '../../portfolio'
 import ThemeContext from '../../context/ThemeContext'
-import { Slide } from 'react-awesome-reveal'
+import Menu from '../../components/Menu'
 
-const Header: React.FC = () => {
+const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
   const fixedHeaderClass =
     'header relative mx-auto max-w-full sm:px-4 py-6 text-secondary-500 dark:text-primary-500 block sm:flex justify-between items-center'
-  const fixedMenuClasses =
-    'block sm:flex absolute sm:relative w-full bg-primary-500 dark:bg-secondary-500 sm:w-auto ease-out transition-transform transform shadow-md sm:shadow-none'
-  const fixedLiClasses = 'sm:px-4 sm:py-6 px-2 py-4'
+
   const { isDark } = useContext(ThemeContext)
+  const toggleMenu = () => setShowMenu(!showMenu)
 
   return (
     <header className={fixedHeaderClass}>
@@ -36,34 +34,16 @@ const Header: React.FC = () => {
             className="menu-icon"
             htmlFor="menu-btn"
             style={{ color: 'white' }}
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={toggleMenu}
           >
             <span className={isDark ? 'navicon navicon-dark' : 'navicon'} />
           </label>
         </div>
       </div>
 
-      <Slide triggerOnce duration={200}>
-        <ul
-          className={`menu  ${
-            showMenu
-              ? fixedMenuClasses
-              : fixedMenuClasses + ' -translate-x-full sm:translate-x-0'
-          }`}
-        >
-          {upperMenu.map((menuItem, index) => {
-            return (
-              <li key={index} className={fixedLiClasses}>
-                <a href={menuItem.link}>{menuItem.name}</a>
-              </li>
-            )
-          })}
-          <li className={fixedLiClasses}>
-            <ToggleSwitch />
-          </li>
-        </ul>
-      </Slide>
+      <Menu showMenu={showMenu} />
     </header>
   )
 }
+
 export default Header
