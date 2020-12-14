@@ -92,7 +92,7 @@ export const workExperiences: IWorkExperiences = {
     {
       role: 'Front-End Developer',
       company: 'Ucase',
-      date: 'June 2020 – November 2020',
+      date: 'November 2019 – November 2020',
       desc:
         'Ucase.live is that solution your business is looking for. Whether you need to hold an online broadcast or organize a corporate event in current conditions of social distancing, Ucase.live is able to arrange that for you.',
       descBullets: [
